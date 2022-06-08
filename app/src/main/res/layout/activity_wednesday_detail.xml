@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_detail.DetailWednesdayActivity"
+    android:background="@color/grey">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/on_monday"
+        android:layout_width="45dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey"
+        android:onClick="onMonday"
+        android:orderInCategory="200"
+        android:src="@drawable/ic_days"
+        android:title="@string/favorite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showAsAction="always" />
+
+    <TextView
+        android:id="@+id/title_monday"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Пн"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/on_monday"
+        app:layout_constraintEnd_toEndOf="@+id/on_monday"
+        app:layout_constraintStart_toStartOf="@+id/on_monday"
+        app:layout_constraintTop_toTopOf="@+id/on_monday" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/on_tuesday"
+        android:layout_width="45dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey"
+        android:onClick="onTuesday"
+        android:orderInCategory="200"
+        android:src="@drawable/ic_days"
+        android:title="@string/favorite"
+        app:layout_constraintStart_toEndOf="@+id/on_monday"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showAsAction="always" />
+
+    <TextView
+        android:id="@+id/title_tuesday"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Вт"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/on_tuesday"
+        app:layout_constraintEnd_toEndOf="@+id/on_tuesday"
+        app:layout_constraintStart_toStartOf="@+id/on_tuesday"
+        app:layout_constraintTop_toTopOf="@+id/on_tuesday" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/on_wednesday"
+        android:layout_width="45dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey"
+        android:orderInCategory="200"
+        android:src="@drawable/ic_main_days"
+        android:title="@string/favorite"
+        app:layout_constraintStart_toEndOf="@+id/on_tuesday"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showAsAction="always" />
+
+    <TextView
+        android:id="@+id/title_wednesday"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Ср"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/on_wednesday"
+        app:layout_constraintEnd_toEndOf="@+id/on_wednesday"
+        app:layout_constraintStart_toStartOf="@+id/on_wednesday"
+        app:layout_constraintTop_toTopOf="@+id/on_wednesday" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/on_thursday"
+        android:layout_width="45dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey"
+        android:onClick="onThursday"
+        android:orderInCategory="200"
+        android:src="@drawable/ic_days"
+        android:title="@string/favorite"
+        app:layout_constraintStart_toEndOf="@+id/on_wednesday"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showAsAction="always" />
+
+    <TextView
+        android:id="@+id/title_thursday"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Чт"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/on_thursday"
+        app:layout_constraintEnd_toEndOf="@+id/on_thursday"
+        app:layout_constraintStart_toStartOf="@+id/on_thursday"
+        app:layout_constraintTop_toTopOf="@+id/on_thursday" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/on_friday"
+        android:layout_width="45dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey"
+        android:onClick="onFriday"
+        android:orderInCategory="200"
+        android:src="@drawable/ic_days"
+        android:title="@string/favorite"
+        app:layout_constraintStart_toEndOf="@+id/on_thursday"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showAsAction="always" />
+
+    <TextView
+        android:id="@+id/title_friday"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Пт"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/on_friday"
+        app:layout_constraintEnd_toEndOf="@+id/on_friday"
+        app:layout_constraintStart_toStartOf="@+id/on_friday"
+        app:layout_constraintTop_toTopOf="@+id/on_friday" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/on_saturday"
+        android:layout_width="45dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey"
+        android:onClick="onSaturday"
+        android:orderInCategory="200"
+        android:src="@drawable/ic_days"
+        android:title="@string/favorite"
+        app:layout_constraintStart_toEndOf="@+id/on_friday"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showAsAction="always" />
+
+    <TextView
+        android:id="@+id/title_saturday"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Сб"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/on_saturday"
+        app:layout_constraintEnd_toEndOf="@+id/on_saturday"
+        app:layout_constraintStart_toStartOf="@+id/on_saturday"
+        app:layout_constraintTop_toTopOf="@+id/on_saturday" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/on_sunday"
+        android:layout_width="45dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/grey"
+        android:onClick="onSunday"
+        android:orderInCategory="200"
+        android:src="@drawable/ic_days"
+        android:title="@string/favorite"
+        app:layout_constraintStart_toEndOf="@+id/on_saturday"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showAsAction="always" />
+
+    <TextView
+        android:id="@+id/title_sunday"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Вс"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/on_sunday"
+        app:layout_constraintEnd_toEndOf="@+id/on_sunday"
+        app:layout_constraintStart_toStartOf="@+id/on_sunday"
+        app:layout_constraintTop_toTopOf="@+id/on_sunday" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="105dp"
+        android:background="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_detail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        tools:listitem="@layout/item_detail" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/backed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@color/purple"
+        android:onClick="onBack"
+        android:orderInCategory="200"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:title="@string/favorite"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:showAsAction="always" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_fullWay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        tools:text="Выбранное направление" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

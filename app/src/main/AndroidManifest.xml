@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.appfirst" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppFirst" >
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/Theme.AppFirst.Fullscreen" />
+        <activity
+            android:name=".activity_favorite.FavoriteMondayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_favorite.FavoriteTuesdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_favorite.FavoriteWednesdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_favorite.FavoriteThursdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_favorite.FavoriteFridayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_favorite.FavoriteSaturdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_favorite.FavoriteSundayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_detail.DetailMondayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_detail.DetailTuesdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_detail.DetailWednesdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_detail.DetailThursdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_detail.DetailFridayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_detail.DetailSaturdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_detail.DetailSundayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_days.TuesdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_days.WednesdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_days.ThursdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_days.FridayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_days.SaturdayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_days.SundayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_days.MondayActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

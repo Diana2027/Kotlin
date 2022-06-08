@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_station"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/direction_light_purple"
+        app:layout_constraintEnd_toEndOf="@+id/direction_light_purple"
+        app:layout_constraintStart_toStartOf="@+id/direction_light_purple"
+        app:layout_constraintTop_toTopOf="@+id/direction_light_purple"
+        tools:text="Москва - Сочи" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="00:35 - 03:10" />
+
+    <ImageView
+        android:id="@+id/direction_light_purple"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_time"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433"
+        app:srcCompat="@drawable/ic_direction_light_purple" />
+
+    <ImageView
+        android:id="@+id/direction_purple"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="-5dp"
+        android:contentDescription="@string/app_name"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/direction_light_purple"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371"
+        app:srcCompat="@drawable/ic_direction_purple" />
+
+    <ImageView
+        android:id="@+id/dir_light_purple"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:contentDescription="@string/app_name"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/direction_purple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time"
+        app:srcCompat="@drawable/ic_dir_light_purple" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
